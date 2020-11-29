@@ -1,0 +1,26 @@
+{
+  "env": {
+    "node": true,
+    "es6": true
+  },
+  "extends": ["airbnb-base"],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module"
+  },
+  "plugins": ["@typescript-eslint", "prettier"],
+  "rules": {
+    "import/extensions": [".js", ".jsx", ".json", ".ts", ".tsx"],
+    "import/no-unresolved": "off",
+    "prettier/prettier": [
+      "error",
+      {
+        "singleQuote": true,
+        "semi": true
+      }
+    ],
+    "indent": ["error", 2],
+    "no-console": 0
+  }
+}
