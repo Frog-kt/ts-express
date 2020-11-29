@@ -1,9 +1,12 @@
 import App from './app';
 
+import dotenv from 'dotenv';
 import bodyParser from 'body-parser';
 import helmet from 'helmet';
 import cors from 'cors';
 import morgan from 'morgan';
+
+dotenv.config({ path: './.env' });
 
 import loggerMiddleware from './middleware/logger';
 import RootController from './controllers/index/root.controller';
