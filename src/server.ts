@@ -8,14 +8,16 @@ import morgan from 'morgan';
 
 dotenv.config({ path: './.env' });
 
+import config from './config';
+
 import loggerMiddleware from './middleware/logger';
 import RootController from './controllers/index/root.controller';
 
 const app = new App({
-  port: 3000,
+  port: config.port,
   controllers: [new RootController()],
   middleWares: [
-    morgan('dev'),
+    morgan('combined'),
     helmet(),
     cors(),
     bodyParser.json(),
