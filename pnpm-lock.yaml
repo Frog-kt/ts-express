@@ -1,6 +1,7 @@
 dependencies:
   body-parser: 1.19.0
   cors: 2.8.5
+  dotenv: 8.2.0
   express: 4.17.1
   helmet: 4.2.0
   moment: 2.29.1
@@ -12,6 +13,7 @@ devDependencies:
   '@types/cors': 2.8.8
   '@types/express': 4.17.9
   '@types/mongoose': 5.10.1
+  '@types/morgan': 1.9.2
   '@types/node': 14.14.10
   '@types/superagent': 4.1.10
   '@typescript-eslint/eslint-plugin': 4.8.2_6341bfd4e6c74608cac2d9a1d059520a
@@ -157,6 +159,12 @@ packages:
     dev: true
     resolution:
       integrity: sha512-5yqbLHOyCQhUb7GPGW0A2dauUbhwgBvUWMzYcaUQiHdLZ8slgRp2R6i8FETZ+t5xeXpfhylYp9U7dAng7WamqQ==
+  /@types/morgan/1.9.2:
+    dependencies:
+      '@types/node': 14.14.10
+    dev: true
+    resolution:
+      integrity: sha512-edtGMEdit146JwwIeyQeHHg9yID4WSolQPxpEorHmN3KuytuCHyn2ELNr5Uxy8SerniFbbkmgKMrGM933am5BQ==
   /@types/node/14.14.10:
     dev: true
     resolution:
@@ -890,6 +898,12 @@ packages:
       npm: '>=1.2'
     resolution:
       integrity: sha512-jnjyiM6eRyZl2H+W8Q/zLMA481hzi0eszAaBUzIVnmYVDBbnLxVNnfu1HgEBvCbL+71FrxMl3E6lpKH7Ge3OXA==
+  /dotenv/8.2.0:
+    dev: false
+    engines:
+      node: '>=8'
+    resolution:
+      integrity: sha512-8sJ78ElpbDJBHNeBzUbUVLsqKdccaa/BXF1uPTw3GrvQTBgrQrtObr2mUrE38vzYd8cEv+m/JBfDLioYcfXoaw==
   /ee-first/1.1.1:
     dev: false
     resolution:
@@ -2945,12 +2959,14 @@ specifiers:
   '@types/cors': ^2.8.8
   '@types/express': ^4.17.9
   '@types/mongoose': ^5.10.1
+  '@types/morgan': ^1.9.2
   '@types/node': ^14.14.10
   '@types/superagent': ^4.1.10
   '@typescript-eslint/eslint-plugin': ^4.8.2
   '@typescript-eslint/parser': ^4.8.2
   body-parser: ^1.19.0
   cors: ^2.8.5
+  dotenv: ^8.2.0
   eslint: ^7.14.0
   eslint-config-airbnb-base: ^14.2.1
   eslint-import-resolver-webpack: ^0.13.0
