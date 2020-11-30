@@ -29,3 +29,6 @@ const app = new AppServer({
 });
 
 app.listen();
+
+// jestでテストするため。
+export default app;
