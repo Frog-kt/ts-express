@@ -1,4 +1,4 @@
-import App from './app';
+import AppServer from './app';
 
 import dotenv from 'dotenv';
 import bodyParser from 'body-parser';
@@ -13,8 +13,10 @@ import config from './config';
 import loggerMiddleware from './middleware/logger';
 import RootController from './controllers/index/root.controller';
 
-const app = new App({
-  port: config.port,
+const port = parseInt(config.port.toString());
+
+const app = new AppServer({
+  port,
   controllers: [new RootController()],
   middleWares: [
     morgan('combined'),
